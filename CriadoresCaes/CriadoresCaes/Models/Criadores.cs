@@ -7,6 +7,8 @@
         public Criadores(){
             // inicializar a lista de animais do criador
             ListaAnimais = new HashSet<Animais>();
+            // inicializar a lista de raças que o criador cria
+            ListaRacas = new HashSet<Racas>();
         }
 
 
@@ -51,6 +53,11 @@
         /// Lista dos animais associados ao Criador
         /// </summary>
         public ICollection<Animais> ListaAnimais { get; set; }
+
+        /// <summary>
+        /// Lista das raças de um criador
+        /// </summary>
+        public ICollection<Racas> ListaRacas { get; set; }
 
 
 
